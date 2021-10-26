@@ -29,11 +29,19 @@ function getInstall(total, item) {
 
 var getInstalls = apps.reduce(getInstall, 0);
 
-console.log("total de intalls:");
-console.log(getInstalls);
+//console.log("total de intalls:");
+//console.log(getInstalls);
 
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
+
+function apenasScore(obj) {
+    return (obj.score > 4);
+};
+
+const score4 = apps.filter(apenasScore);
+
+console.log(score4);
 
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
