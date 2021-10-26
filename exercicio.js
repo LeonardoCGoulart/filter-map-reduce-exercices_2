@@ -41,8 +41,17 @@ function apenasScore(obj) {
 
 const score4 = apps.filter(apenasScore);
 
-console.log(score4);
+//console.log(score4);
 
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
+
+function doLowerCase(obj){
+    obj.appname = obj.appname.toLowerCase();
+    return obj;
+}
+
+apps.map(doLowerCase);
+
+console.log(apps)
 
